@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI-Puzzle</title>
+  <link rel="stylesheet" href="AI-Puzzle.css">
+  <link href="image/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="AI-Puzzle.js"></script>
+</head>
+<body>
+  <div id="game">
+    <p>拼图游戏</p>
+    <p id="result" class="hidden">You win!</p>
+    <div id="game-position">
+      <!--game-area-->
+    </div>
+    <div id="select-area">
+      <p>选择图片:</p>
+      <button id="img-select-1" class="sbtn" value="1"></button>
+      <button id="img-select-2" class="sbtn" value="2"></button>
+      <button id="img-select-3" class="sbtn" value="3"></button>
+    </div>
+    <button id="reset">重新开始</button>
+    <button id="AI">AI</button>
+  </div>
+</body>
+</html>

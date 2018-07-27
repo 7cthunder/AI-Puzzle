@@ -1,0 +1,16 @@
+{
+  "name": "ai-puzzle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AI-Puzzle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}

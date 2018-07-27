@@ -1,0 +1,156 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("image/Rick.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image/Rick.png',sizingMethod='scale');
+}
+
+#game {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0;
+  text-align: center;
+}
+
+#game p {
+  font-size: 40px;
+  margin: 20px;
+  font-family: "Microsoft YaHei", 微软雅黑, 宋体;
+  color: rgba(255, 255, 255, 1);
+}
+
+#game .hidden {
+  height: 30px;
+  font-size: 25px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#game .displayed {
+  height: 30px;
+  font-size: 25px;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.puzzle {
+  width: 88px;
+  height: 88px;
+  border: lightgray 1px solid;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.puzzle-image-1 {
+  background: url("image/RickPuzzle.png") no-repeat;
+}
+
+.puzzle-image-2 {
+  background: url("image/MortyPuzzle.png") no-repeat;
+}
+
+.puzzle-image-3 {
+  background: url("image/RickandMortyPuzzle.png") no-repeat;
+}
+
+.puzzle:hover {
+  border-color: gray;
+  margin: 0;
+}
+
+.empty-part {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin: 1px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#game #select-area p {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+#game #select-area button {
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+  border-radius: 50%;
+  margin: 8px 15px 15px 15px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+#game #select-area button:active {
+  opacity: 0.7;
+}
+
+#img-select-1 {
+  background-image: url("image/RickPuzzle.png");
+}
+
+#img-select-2 {
+  background-image: url("image/MortyPuzzle.png");
+}
+
+#img-select-3 {
+  background-image: url("image/RickandMortyPuzzle.png");
+}
+
+#reset {
+  position: relative;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background-color: rgba(219, 87, 51, 1);
+  font-family: "Microsoft YaHei", 微软雅黑, 宋体;
+  font-weight: 700;
+  font-size: 32px;
+  display: block;
+  padding: 4px;
+  border-radius: 8px;
+  /* let's use box shadows to make the button look more 3-dimensional */
+  box-shadow: 0 9px 0 rgba(219, 31, 5, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+  margin: 20px auto;
+  width: 160px;
+  text-align: center;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  transition: all .1s ease;
+  outline: none;
+  border: none;
+}
+
+#reset:active {
+  box-shadow: 0 3px 0 rgba(219, 31, 5, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+  position: relative;
+  top: 6px;
+}
+
+.puzzle1 { background-position: top -0px left -0px; }
+.puzzle2 { background-position: top -0px left -88px; }
+.puzzle3 { background-position: top -0px left -176px; }
+.puzzle4 { background-position: top -0px left -264px; }
+.puzzle5 { background-position: top -88px left -0px; }
+.puzzle6 { background-position: top -88px left -88px; }
+.puzzle7 { background-position: top -88px left -176px; }
+.puzzle8 { background-position: top -88px left -264px; }
+.puzzle9 { background-position: top -176px left -0px; }
+.puzzle10 { background-position: top -176px left -88px; }
+.puzzle11 { background-position: top -176px left -176px; }
+.puzzle12 { background-position: top -176px left -264px; }
+.puzzle13 { background-position: top -264px left -0px; }
+.puzzle14 { background-position: top -264px left -88px; }
+.puzzle15 { background-position: top -264px left -176px; }
